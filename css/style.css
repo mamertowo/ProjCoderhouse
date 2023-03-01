@@ -6,8 +6,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: grey;
     color: black;
     padding-top: 56px;
+    min-height: calc(100vh - 56px);
 }
 
 h1, h2, h3, h4, h5, h6 {
