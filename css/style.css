@@ -220,8 +220,19 @@ footer p {
 .proyecto .descripcion {
     background-color: white;
     padding: 10px;
+    text-align: center;
     overflow: hidden;
-    aspect-ratio: 16 / 9;
+}
+
+@media screen and (min-width: 992px) {
+    .proyecto .descripcion {
+        aspect-ratio: 16 / 9;
+        text-align: left;
+    }
+
+    .proyecto .derecha {
+        text-align: right;
+    }
 }
 
 .proyecto .preview {
@@ -232,8 +243,4 @@ footer p {
     display: block;
     width: 100%;
     padding: 0;
-}
-
-.proyecto .derecha {
-    text-align: right;
 }
