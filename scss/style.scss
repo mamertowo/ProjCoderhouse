@@ -193,8 +193,16 @@ footer {
                 border-radius: 20px;
                 padding: 10px;
                 margin-top: 10px;
-                height: 8em;
+                max-height: 8em;
+                min-height: 8em;
                 overflow: hidden;
+                transition: max-height 0.75s;
+            }
+            &:hover {
+                p {
+                    max-height: 16em;
+                    height: auto;
+                }
             }
         }
     }
