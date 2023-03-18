@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sección de habilidades del sitio de Valentino Murga para el proyecto final del curso de desarrollo web de Coderhouse.">
+    <meta name="keywords" content="Valentino, Murga, HTML, CSS, CV, Animaciones, Proyectos, Habilidades">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Valentino Murga</title>
+    <title>Habilidades | Valentino Murga</title>
 </head>
 <body>
     <header>
@@ -35,7 +38,7 @@
         <section class="habilidades idiomas">
             <h2 class="titulo">Idiomas</h2>
             <div class="habilidadesCaja">
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Español</h3>
                     <p>
                         Nivel Escrito: Nativo <br>
@@ -45,7 +48,7 @@
                         Nací y vivo en Argentina actualmente, si no tuviera un buen control del lenguaje estaría en problemas.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Inglés</h3>
                     <p>
                         Nivel Escrito: Avanzado <br>
@@ -60,31 +63,31 @@
         <section class="habilidades lenguajes">
             <h2 class="titulo">Lenguajes de programación</h2>
             <div class="habilidadesCaja">
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>JavaScript</h3>
                     <p>
                         Puedo usar JavaScript con Node.js y librerías como p5.js, discord.js, etc. Pero siempre sin interactuar mucho con una página. Después de este curso de Web Dev viene el de JS donde debería aprender eso.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>C++</h3>
                     <p>
                         Estoy cursando la carrera de Ciencias de la Computación y durante la materia de Algoritmos aprendimos las bases de C++. Hace poco lo usé para hacer un intérprete simple de BF, un lenguaje esotérico con un nombre poco amigable.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Python</h3>
                     <p>
                         Python es probablemente el primer lenguaje de programación para muchas personas por su amigable sintaxis. A mi no me gusta esa sintaxis porque hace difícil saber donde empiezan y terminan las cosas. De todas formas uso este lenguaje por toda su utilidad.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Processing</h3>
                     <p>
                         p5.js en realidad es una modificación de Processing para funcionar con JavaScript en un navegador. Processing es una modificación de Java y es el primer lenguaje de programación que aprendí.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>GDScript</h3>
                     <p>
                         Desde muy chico que me gustan mucho los videojuegos y también me interesa el desarrollo de los mismos. Habiendo probado Unity con sus tiempos de carga desagradables, Godot se sintió maravilloso. La única desventaja es que su lenguaje GDScript está basado en Python y por lo tanto comparte parte de su sintaxis incómoda.
@@ -95,25 +98,25 @@
         <section class="habilidades design">
             <h2 class="titulo">Diseño</h2>
             <div class="habilidadesCaja">
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Adobe Photoshop</h3>
                     <p>
                         A pesar de mi odio por Adobe, pocos programas (o ninguno) pueden hacer todo lo que hace Photoshop y tienen una comunidad tan grande lista para ayudar. Tengo un control medio del programa pero casi cualquier cosa que no sepa hacer tiene 23 tutoriales listos en internet.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Adobe Premiere Pro</h3>
                     <p>
                         A diferencia de Photoshop, si que hay varios programas que hacen lo mismo que Premiere Pro, quizá incluso mejor. Sin embargo, ya estoy acostumbrado a este y voy a tardar un tiempo en remplazarlo.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Adobe After Effects</h3>
                     <p>
                         After effects me gusta.
                     </p>
                 </div>
-                <div class="habilidad">
+                <div class="habilidad" data-aos="fade-up">
                     <h3>Otros</h3>
                     <p>
                         Hace muchos años que estoy constantemente probando programas con multitud de funciones y llenando mi computadora de basura.
@@ -131,5 +134,9 @@
         <p>&copy En realidad este sitio no tiene copyright jaja</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

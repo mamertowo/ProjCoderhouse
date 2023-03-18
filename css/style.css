@@ -1,4 +1,32 @@
 @charset "UTF-8";
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes funky {
+  0% {
+    transform: rotate3d(0); }
+  100% {
+    transform: rotate3d(0, 1, 1, 360deg); } }
+
 * {
   padding: 0;
   margin: 0;
@@ -80,7 +108,7 @@ footer {
 
 /*Pantalla principal*/
 .fotoFrente {
-  text-align: end; }
+  text-align: center; }
   .fotoFrente img {
     max-width: 100%;
     max-height: calc(100vh - 40px - 56px); }
@@ -93,7 +121,15 @@ footer {
 
 @media screen and (min-width: 768px) {
   .info {
-    text-align: left; } }
+    text-align: left;
+    animation: fade-in-right 1s; }
+  .fotoFrente {
+    text-align: end;
+    animation: fade-in-left 1s; } }
+
+@media screen and (max-height: 768px) {
+  .contacto-row {
+    animation: fade-in 1s; } }
 
 /*Sección "Sobre mí"*/
 .sobreMi h2 {
@@ -105,7 +141,11 @@ footer {
   .sobreMi p img {
     float: right;
     height: 200px;
-    margin: 20px; }
+    margin: 20px;
+    animation: funky 1s;
+    transition: transform 0.25s; }
+    .sobreMi p img:hover {
+      transform: scale(1, 0.5); }
 
 @media screen and (min-width: 768px) {
   .sobreMi p img {
