@@ -130,7 +130,7 @@ footer {
     }
 }
 
-@media screen and (max-height: $sc-medium) {
+@media screen and (max-width: $sc-medium) {
     .contacto-row {
         animation: fade-in 1s;
     }
@@ -199,7 +199,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         .habilidad {
-            width: 45%;
+            width: 90%;
             margin: 10px;
             h3 {
                 font-size: 1.3em;
@@ -220,6 +220,16 @@ footer {
                     max-height: 16em;
                     height: auto;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $sc-small) {
+    .habilidades {
+        .habilidadesCaja {
+            .habilidad {
+                width: 45%;
             }
         }
     }

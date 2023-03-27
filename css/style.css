@@ -127,7 +127,7 @@ footer {
     text-align: end;
     animation: fade-in-left 1s; } }
 
-@media screen and (max-height: 768px) {
+@media screen and (max-width: 768px) {
   .contacto-row {
     animation: fade-in 1s; } }
 
@@ -175,7 +175,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center; }
     .habilidades .habilidadesCaja .habilidad {
-      width: 45%;
+      width: 90%;
       margin: 10px; }
       .habilidades .habilidadesCaja .habilidad h3 {
         font-size: 1.3em; }
@@ -192,6 +192,10 @@ footer {
       .habilidades .habilidadesCaja .habilidad:hover p {
         max-height: 16em;
         height: auto; }
+
+@media screen and (min-width: 576px) {
+  .habilidades .habilidadesCaja .habilidad {
+    width: 45%; } }
 
 @media screen and (min-width: 992px) {
   .habilidades .habilidadesCaja .habilidad {
