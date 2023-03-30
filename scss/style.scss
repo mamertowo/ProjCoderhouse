@@ -77,8 +77,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     address {
         margin: 10px;
+        img {
+            filter: invert(50%);
+        }
     }
     p {
         margin: 10px;
@@ -87,6 +91,7 @@ footer {
 
 @media screen and (min-width: $sc-medium) {
     footer {
+        text-align: left;
         flex-direction: row;
         address {
             align-self: flex-start;
@@ -214,6 +219,7 @@ footer {
                 min-height: 8em;
                 overflow: hidden;
                 transition: max-height 0.75s;
+                box-shadow: -1px 3px 7px $sombras;
             }
             &:hover {
                 p {
@@ -281,4 +287,63 @@ footer {
         width: 100%;
         padding: 0;
     }
+}
+
+/*Contacto*/
+.contact-form {
+    background-color: chocolate;
+    text-align: center;
+    .titulo {
+        color: white;
+    }
+    form {
+        background-color: white;
+        margin-top: 20px;
+        box-shadow: -1px 3px 7px $sombras;
+    }
+    .enviar {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: $sc-small) {
+    .contact-form {
+        form {
+            border-radius: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $sc-medium) {
+    .contact-form {
+        form {
+            max-width: 60%;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: $sc-large) {
+    .contact-form {
+        form {
+            max-width: 40%;
+        }
+    }
+}
+
+/*404*/
+.error404 {
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    a {
+        color: white;
+    }
+    .errorNum {
+        font-size: 40vmin;
+        animation: full-rotation infinite 5s linear;
+    }
+    animation: regrbl infinite 10s linear;
 }

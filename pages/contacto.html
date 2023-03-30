@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sección de contacto del sitio de Valentino Murga para el proyecto final del curso de desarrollo web de Coderhouse.">
+    <meta name="keywords" content="Valentino, Murga, HTML, CSS, CV, Animaciones, Proyectos, Habilidades, Contacto">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto | Valentino Murga</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <h1>Valentino Murga</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html#sobreMi">Sobre Mí</a>
+                        <a class="nav-link" href="./habilidades.html">Habilidades</a>
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2 class="titulo">Contacto</h2>
+            <form action="#" class="d-flex flex-column p-4 container">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <label for="email" class="mt-2">Correo electrónico</label>
+                <input type="text" id="email" required>
+                <label for="msg" class="mt-2">Mensaje</label>
+                <textarea id="msg" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Enviar" class="mt-4 enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <a href="https://www.instagram.com/obviousplant/" target="_blank"><img src="../assets/img/icon_ig.svg" alt="Instagram logo"></a> <a href="https://twitter.com/ATCardBot" target="_blank"><img src="../assets/img/icon_tw.svg" alt="Twitter logo"></a> <br>
+            mailderelleno@gmail.com <br>
+            11 1234-5678 <br>
+            Ciudad Autónoma de Buenos Aires, Argentina
+        </address>
+        <p>&copy En realidad este sitio no tiene copyright jaja</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
